@@ -17,7 +17,7 @@ export default function Dropdown({options}: DropdownProps) {
 
     return(
         <div>
-            <div onClick={handleSelection}>{selectedOption?? "Select an option"}</div>
+            <input type="text" onClick={handleSelection} value={selectedOption} readOnly />
             {isOpen && (
                 <div>
                     {options.map((option, index) => (

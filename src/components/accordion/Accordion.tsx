@@ -17,9 +17,9 @@ export default function Accordion({items}: AccordionProps){
                 return(
                     <div key={index}>
                         <div onClick={() => handleToggle(index)} className={styles.heading}>
-                            {item.heading}
+                            {'>'}  {item.heading} 
                         </div>
-                        {isOpen && <div>{item.content}</div>}
+                        {isOpen && <p> {item.content}</p>}
                     </div>
                 )
             })}
